@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neve — Heladeria Artesanal | Caracas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav>
+  <span class="nav-logo">neve<span>.</span></span>
+  <ul class="nav-links">
+    <li><a href="#sabores">Sabores</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#proceso">Proceso</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <button class="nav-cta">Pedir ahora</button>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero">
+  <div class="hero-text">
+    <div class="hero-eyebrow">Heladeria Artesanal en Caracas desde 2009</div>
+    <h1 class="hero-title">
+      El sabor que<br><em>siempre</em><br>recordabas.
+    </h1>
+    <p class="hero-sub">
+      Helados elaborados con leche fresca, frutas de temporada y recetas que preservamos desde la primera copa que servimos en el corazon de Caracas.
+    </p>
+    <div class="hero-btns">
+      <button class="btn-primary" id="btn-sabores">Ver sabores</button>
+      <button class="btn-secondary" id="btn-nosotros">Nuestra historia</button>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <span class="hero-stat-num">38</span>
+        <span class="hero-stat-label">Sabores</span>
+      </div>
+      <div>
+        <span class="hero-stat-num">15+</span>
+        <span class="hero-stat-label">Anos de oficio</span>
+      </div>
+      <div>
+        <span class="hero-stat-num">100%</span>
+        <span class="hero-stat-label">Artesanal</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="hero-svg-wrap">
+      <div class="blob-bg"></div>
+      <div class="dot dot1"></div>
+      <div class="dot dot2"></div>
+      <div class="dot dot3"></div>
+
+      <!-- Ilustracion helado artesanal SVG -->
+      <svg width="360" height="400" viewBox="0 0 360 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Cono -->
+        <path d="M130 260 L180 390 L230 260 Z" fill="#D4956A"/>
+        <path d="M130 260 L180 390 L230 260 Z" fill="url(#conoGrad)"/>
+        <defs>
+          <linearGradient id="conoGrad" x1="130" y1="260" x2="230" y2="390" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#C4834A"/>
+            <stop offset="1" stop-color="#E8A87C"/>
+          </linearGradient>
+          <linearGradient id="scoopGrad1" x1="100" y1="180" x2="200" y2="100" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#F2C4CE"/>
+            <stop offset="1" stop-color="#E8A0B4"/>
+          </linearGradient>
+          <linearGradient id="scoopGrad2" x1="140" y1="160" x2="240" y2="80" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#B8E0D2"/>
+            <stop offset="1" stop-color="#8ECFBE"/>
+          </linearGradient>
+          <linearGradient id="scoopGrad3" x1="120" y1="130" x2="220" y2="50" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FAEBD7"/>
+            <stop offset="1" stop-color="#F5D5A8"/>
+          </linearGradient>
+        </defs>
+        <!-- Lineas del cono -->
+        <line x1="155" y1="270" x2="180" y2="385" stroke="#C4834A" stroke-width="1" opacity="0.5"/>
+        <line x1="180" y1="265" x2="180" y2="385" stroke="#C4834A" stroke-width="1" opacity="0.5"/>
+        <line x1="205" y1="270" x2="180" y2="385" stroke="#C4834A" stroke-width="1" opacity="0.5"/>
+        <!-- Bola 1 (frutilla) -->
+        <circle cx="160" cy="245" r="55" fill="url(#scoopGrad1)"/>
+        <circle cx="147" cy="232" r="14" fill="#F8D0DA" opacity="0.6"/>
+        <circle cx="175" cy="255" r="4" fill="#C85C72" opacity="0.4"/>
+        <circle cx="185" cy="240" r="3" fill="#C85C72" opacity="0.3"/>
+        <!-- Bola 2 (menta) -->
+        <circle cx="210" cy="220" r="52" fill="url(#scoopGrad2)"/>
+        <circle cx="200" cy="208" r="12" fill="#D8EEE8" opacity="0.5"/>
+        <ellipse cx="220" cy="225" rx="4" ry="2" fill="#5C3D2E" opacity="0.4" transform="rotate(20 220 225)"/>
+        <ellipse cx="205" cy="238" rx="4" ry="2" fill="#5C3D2E" opacity="0.35" transform="rotate(-15 205 238)"/>
+        <ellipse cx="230" cy="212" rx="3" ry="1.5" fill="#5C3D2E" opacity="0.3" transform="rotate(40 230 212)"/>
+        <!-- Bola 3 (vainilla) -->
+        <circle cx="180" cy="170" r="58" fill="url(#scoopGrad3)"/>
+        <circle cx="165" cy="155" r="16" fill="#FFF8F0" opacity="0.5"/>
+        <circle cx="185" cy="175" r="2.5" fill="#8B6914" opacity="0.3"/>
+        <circle cx="195" cy="162" r="2" fill="#8B6914" opacity="0.25"/>
+        <circle cx="172" cy="182" r="2" fill="#8B6914" opacity="0.25"/>
+        <circle cx="190" cy="185" r="1.5" fill="#8B6914" opacity="0.2"/>
+        <!-- Salsa caramelo -->
+        <path d="M160 130 Q180 120 200 135 Q210 140 215 150" stroke="#D4956A" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SABORES ─── -->
+<section class="section" id="sabores">
+  <div class="reveal">
+    <p class="section-label">Nuestra carta</p>
+    <h2 class="section-title">Sabores que cuentan<br>una historia.</h2>
+    <p class="section-sub">Cada receta nace de ingredientes seleccionados. Ninguna es improvisada; todas llevan tiempo.</p>
+  </div>
+
+  <div class="flavors-grid">
+
+    <!-- Frutilla -->
+    <div class="flavor-card reveal">
+      <div class="flavor-circle">
+        <svg viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" width="90" height="90">
+          <circle cx="45" cy="45" r="45" fill="#F2C4CE"/>
+          <circle cx="35" cy="35" r="18" fill="#F8D8DF" opacity="0.6"/>
+          <path d="M45 28 C45 28 32 36 32 50 C32 60 38 67 45 67 C52 67 58 60 58 50 C58 36 45 28 45 28Z" fill="#C85C72" opacity="0.9"/>
+          <path d="M45 22 L46 30 M41 24 L43 31 M49 24 L47 31" stroke="#3A7D3A" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="42" cy="48" r="1.5" fill="#FFF" opacity="0.6"/>
+          <circle cx="49" cy="54" r="1.2" fill="#FFF" opacity="0.5"/>
+          <circle cx="44" cy="58" r="1" fill="#FFF" opacity="0.4"/>
+        </svg>
+      </div>
+      <span class="flavor-name">Frutilla al natural</span>
+      <span class="flavor-desc">Frutillas frescas de temporada, sin colorantes ni saborizantes.</span>
+      <span class="flavor-price">desde $8 USD</span>
+    </div>
+
+    <!-- Pistacho -->
+    <div class="flavor-card reveal">
+      <div class="flavor-circle">
+        <svg viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" width="90" height="90">
+          <circle cx="45" cy="45" r="45" fill="#C8DCBC"/>
+          <circle cx="58" cy="32" r="16" fill="#D8E8CC" opacity="0.5"/>
+          <ellipse cx="45" cy="50" rx="18" ry="15" fill="#7A9E5A" opacity="0.85"/>
+          <ellipse cx="38" cy="44" rx="10" ry="8" fill="#8EB86A" opacity="0.6"/>
+          <circle cx="50" cy="52" r="3" fill="#FFF" opacity="0.25"/>
+        </svg>
+      </div>
+      <span class="flavor-name">Pistacho tostado</span>
+      <span class="flavor-desc">Pistachos tostados a baja temperatura para conservar su aceite natural.</span>
+      <span class="flavor-price">desde $10 USD</span>
+    </div>
+
+    <!-- Parchita -->
+    <div class="flavor-card reveal">
+      <div class="flavor-circle">
+        <svg viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" width="90" height="90">
+          <circle cx="45" cy="45" r="45" fill="#FDE8A0"/>
+          <circle cx="32" cy="30" r="14" fill="#FEF4C0" opacity="0.5"/>
+          <ellipse cx="45" cy="50" rx="20" ry="14" fill="#E8A020" opacity="0.85"/>
+          <circle cx="45" cy="48" r="8" fill="#F5C040" opacity="0.7"/>
+          <circle cx="45" cy="48" r="4" fill="#C87820" opacity="0.5"/>
+          <line x1="30" y1="52" x2="60" y2="52" stroke="#C87820" stroke-width="1" opacity="0.3"/>
+        </svg>
+      </div>
+      <span class="flavor-name">Parchita tropical</span>
+      <span class="flavor-desc">Maracuya venezolano de pulpa directa. Acido, dulce y bien caraqueño.</span>
+      <span class="flavor-price">desde $7 USD</span>
+    </div>
+
+    <!-- Chocolate -->
+    <div class="flavor-card reveal">
+      <div class="flavor-circle">
+        <svg viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" width="90" height="90">
+          <circle cx="45" cy="45" r="45" fill="#C8A882"/>
+          <circle cx="30" cy="32" r="15" fill="#D8B892" opacity="0.5"/>
+          <ellipse cx="45" cy="50" rx="20" ry="14" fill="#4A2C0A" opacity="0.9"/>
+          <ellipse cx="38" cy="44" rx="10" ry="7" fill="#6A4020" opacity="0.6"/>
+          <circle cx="50" cy="52" r="4" fill="#FFF" opacity="0.1"/>
+        </svg>
+      </div>
+      <span class="flavor-name">Chocolate oscuro</span>
+      <span class="flavor-desc">70% cacao, intenso y sin azucar refinada en exceso.</span>
+      <span class="flavor-price">desde $9 USD</span>
+    </div>
+
+    <!-- Mango -->
+    <div class="flavor-card reveal">
+      <div class="flavor-circle">
+        <svg viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" width="90" height="90">
+          <circle cx="45" cy="45" r="45" fill="#FFD080"/>
+          <circle cx="55" cy="35" r="13" fill="#FFE0A0" opacity="0.5"/>
+          <ellipse cx="45" cy="50" rx="19" ry="14" fill="#F0A000" opacity="0.85"/>
+          <ellipse cx="40" cy="46" rx="8" ry="5" fill="#FFD060" opacity="0.5"/>
+          <circle cx="52" cy="53" r="3" fill="#FFF" opacity="0.2"/>
+        </svg>
+      </div>
+      <span class="flavor-name">Mango de temporada</span>
+      <span class="flavor-desc">Mango criollo venezolano en su punto exacto de madurez. Sin aditivos.</span>
+      <span class="flavor-price">desde $8 USD</span>
+    </div>
+
+    <!-- Menta granizado -->
+    <div class="flavor-card reveal">
+      <div class="flavor-circle">
+        <svg viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" width="90" height="90">
+          <circle cx="45" cy="45" r="45" fill="#B8E0D2"/>
+          <circle cx="55" cy="35" r="13" fill="#D0EEE6" opacity="0.5"/>
+          <ellipse cx="45" cy="50" rx="19" ry="14" fill="#5ABAAA" opacity="0.85"/>
+          <ellipse cx="40" cy="48" rx="5" ry="3" fill="#FFF" opacity="0.3" transform="rotate(-20 40 48)"/>
+          <ellipse cx="52" cy="54" rx="4" ry="2.5" fill="#FFF" opacity="0.2" transform="rotate(15 52 54)"/>
+        </svg>
+      </div>
+      <span class="flavor-name">Menta granizado</span>
+      <span class="flavor-desc">Menta fresca con trozos de chocolate amargo. El clasico reinventado.</span>
+      <span class="flavor-price">desde $8 USD</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── NOSOTROS ─── -->
+<section class="about" id="nosotros">
+  <div class="about-img-wrap reveal">
+    <div class="about-card">
+      <!-- SVG ilustracion heladeria interior -->
+      <svg width="280" height="340" viewBox="0 0 280 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="340" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFF8F2"/>
+            <stop offset="1" stop-color="#F5EDE0"/>
+          </linearGradient>
+        </defs>
+        <rect width="280" height="340" fill="url(#wallGrad)"/>
+        <rect y="260" width="280" height="80" fill="#EDE5D8"/>
+        <rect x="20" y="200" width="240" height="65" rx="8" fill="#D4956A" opacity="0.8"/>
+        <rect x="20" y="195" width="240" height="15" rx="4" fill="#C4834A"/>
+        <rect x="30" y="215" width="220" height="40" rx="4" fill="rgba(200,220,255,0.25)" stroke="#BDD9F2" stroke-width="1"/>
+        <ellipse cx="65" cy="235" rx="22" ry="12" fill="#F2C4CE" opacity="0.9"/>
+        <ellipse cx="115" cy="235" rx="22" ry="12" fill="#B8E0D2" opacity="0.9"/>
+        <ellipse cx="165" cy="235" rx="22" ry="12" fill="#FFD080" opacity="0.9"/>
+        <ellipse cx="215" cy="235" rx="22" ry="12" fill="#C8A882" opacity="0.8"/>
+        <rect x="50" y="248" width="30" height="5" rx="2" fill="#C85C72" opacity="0.5"/>
+        <rect x="100" y="248" width="30" height="5" rx="2" fill="#5ABAAA" opacity="0.5"/>
+        <rect x="150" y="248" width="30" height="5" rx="2" fill="#F0A000" opacity="0.5"/>
+        <rect x="200" y="248" width="30" height="5" rx="2" fill="#7A5C40" opacity="0.5"/>
+        <rect x="50" y="30" width="180" height="120" rx="8" fill="#2D2A26"/>
+        <text x="140" y="65" text-anchor="middle" fill="#FFF" font-family="'Playfair Display', serif" font-size="13" font-style="italic">Sabores del dia</text>
+        <line x1="60" y1="75" x2="220" y2="75" stroke="#FFF" stroke-width="0.7" opacity="0.3"/>
+        <circle cx="72" cy="92" r="4" fill="#F2C4CE" opacity="0.9"/>
+        <rect x="82" y="89" width="80" height="5" rx="2" fill="#FFF" opacity="0.7"/>
+        <circle cx="72" cy="109" r="4" fill="#FFD080" opacity="0.9"/>
+        <rect x="82" y="106" width="65" height="5" rx="2" fill="#FFF" opacity="0.7"/>
+        <circle cx="72" cy="126" r="4" fill="#B8E0D2" opacity="0.9"/>
+        <rect x="82" y="123" width="75" height="5" rx="2" fill="#FFF" opacity="0.7"/>
+        <circle cx="140" cy="15" r="10" fill="#FFF" opacity="0.6"/>
+        <line x1="140" y1="25" x2="140" y2="30" stroke="#CCC" stroke-width="2"/>
+        <ellipse cx="140" cy="30" rx="30" ry="5" fill="#FAEBD7" opacity="0.3"/>
+      </svg>
+    </div>
+    <div class="badge-float">
+      <strong>2009</strong>
+      Fundados en Caracas
+    </div>
+  </div>
+
+  <div class="reveal">
+    <p class="section-label">Quienes somos</p>
+    <h2 class="section-title">Una heladeria hecha<br>con paciencia.</h2>
+    <p class="section-sub" style="margin-bottom:1.5rem;">
+      Neve nacio de la obsesion de una familia caraquena por el helado bien hecho. Sin atajos, sin premezclados, sin conservantes ocultos.
+    </p>
+    <p style="font-size:0.95rem; color:var(--ink-light); line-height:1.7; margin-bottom:2rem;">
+      Cada manana elaboramos nuestras bases en cocina abierta en el este de Caracas. Los clientes pueden ver el proceso — porque no tenemos nada que esconder y mucho que mostrar.
+    </p>
+
+    <div class="process-steps" id="proceso">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-title">Seleccion de fruta</div>
+        <p class="step-text">Compramos en el mercado de Chacao tres veces por semana. Solo entra lo que supera nuestra cata.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-title">Coccion lenta</div>
+        <p class="step-text">Las bases se cocinan a fuego suave durante horas para desarrollar sabor real.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-title">Mantecado</div>
+        <p class="step-text">El proceso de mantecado controla la textura para que cada cucharada sea perfecta.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TESTIMONIALS ─── -->
+<section class="section testimonials" id="contacto">
+  <div class="reveal">
+    <p class="section-label">Lo que dicen</p>
+    <h2 class="section-title">Opiniones de quienes<br>ya volvieron.</h2>
+    <p class="section-sub">La fidelidad de nuestros clientes caraquenos es el mejor indicador de calidad.</p>
+  </div>
+  <div class="testi-grid">
+
+    <div class="testi-card reveal">
+      <div class="testi-stars">
+        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <p class="testi-text">"El pistacho es lo mejor que probe en mucho tiempo en Caracas. No tiene ese sabor artificial que tienen los demas. Es helado de verdad."</p>
+      <span class="testi-author">Valentina R. — cliente desde 2017</span>
+    </div>
+
+    <div class="testi-card reveal">
+      <div class="testi-stars">
+        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <p class="testi-text">"Llevo a mi familia todos los domingos a Las Mercedes. La parchita granizada es una institucion. Nunca cambia y eso es exactamente lo que uno necesita."</p>
+      <span class="testi-author">Marcos T. — cliente desde 2014</span>
+    </div>
+
+    <div class="testi-card reveal">
+      <div class="testi-stars">
+        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <p class="testi-text">"Vine de Maracaibo a visitar familia y encontre Neve por recomendacion. Me lleve helado de mango y parchita de vuelta. Insuperable."</p>
+      <span class="testi-author">Lucia S. — visitante de Maracaibo</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── CTA BANNER ─── -->
+<section class="cta-banner">
+  <div style="position:relative;z-index:2">
+    <p class="section-label" style="color:var(--rose)">Novedades y ofertas</p>
+    <h2 class="section-title">Enterate primero<br>de los sabores de temporada.</h2>
+    <p>Cada semana incorporamos sabores nuevos en Caracas. Suscribete y te avisamos antes que nadie.</p>
+    <div class="cta-inputs">
+      <input class="cta-input" type="email" id="cta-email" placeholder="Tu correo electronico" />
+      <button class="btn-primary" id="cta-submit">Quiero enterarme</button>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="nav-logo">neve<span>.</span></span>
+      <p>Heladeria artesanal en Caracas, Venezuela. Elaboramos con leche fresca, frutas venezolanas y recetas propias desde 2009.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="#sabores">Sabores</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#">Catering</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Visita</h4>
+      <ul>
+        <li><a href="#">Las Mercedes</a></li>
+        <li><a href="#">Chacao</a></li>
+        <li><a href="#">Lun–Dom: 12–22h</a></li>
+        <li><a href="#">Delivery disponible</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">WhatsApp</a></li>
+        <li><a href="#">neve@neve.com.ve</a></li>
+        <li><a href="#">Franquicias</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Neve Heladeria Artesanal. Todos los derechos reservados.</span>
+    <span>Hecho con leche y cuidado en Caracas, Venezuela.</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
